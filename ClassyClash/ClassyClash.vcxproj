@@ -40,9 +40,11 @@
   <ItemGroup>
     <ClCompile Include="src\Character.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Prop.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\Prop.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
