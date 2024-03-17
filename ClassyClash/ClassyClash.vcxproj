@@ -38,7 +38,11 @@
     <Image Include="nature_tileset\worldmap.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Character.cpp" />
     <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Character.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
