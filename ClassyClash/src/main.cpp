@@ -1,8 +1,8 @@
 #include "raylib.h"
 #include "raymath.h"
 #include "Props/Prop.h"
-#include "Character/Character.h"
-#include "Enemy/Enemy.h"
+#include "Characters/Character.h"
+#include "Characters/Enemy.h"
 
 
 int main()

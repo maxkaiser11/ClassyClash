@@ -38,14 +38,16 @@
     <Image Include="nature_tileset\worldmap.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Character\Character.cpp" />
-    <ClCompile Include="src\Enemy\Enemy.cpp" />
+    <ClCompile Include="src\Characters\BaseCharacter.cpp" />
+    <ClCompile Include="src\Characters\Character.cpp" />
+    <ClCompile Include="src\Characters\Enemy.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Props\Prop.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Character\Character.h" />
-    <ClInclude Include="src\Enemy\Enemy.h" />
+    <ClInclude Include="src\Characters\BaseCharacter.h" />
+    <ClInclude Include="src\Characters\Character.h" />
+    <ClInclude Include="src\Characters\Enemy.h" />
     <ClInclude Include="src\Props\Prop.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

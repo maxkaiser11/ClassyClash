@@ -1,20 +1,20 @@
-#include "raylib.h"
-#include "raymath.h"
+#ifndef BASE_CHARACTER_H
+#define BASE_CHARACTER_H
 
-class Character
+#include "raylib.h"
+
+class BaseCharacter
 {
 public:
-	Character(int winWidth, int winHeight);
+	BaseCharacter();
 
 	Vector2 getWorldPos() { return worldPos; }
-
-	void tick(float deltaTime);
 
 	void undoMovement();
 
 	Rectangle getCollisionRec();
 
-private:
+protected:
 	Texture2D texture{ LoadTexture("characters/knight_idle_spritesheet.png") };
 	Texture2D idle{ LoadTexture("characters/knight_idle_spritesheet.png") };
 	Texture2D run{ LoadTexture("characters/knight_run_spritesheet.png") };
@@ -31,5 +31,10 @@ private:
 	float speed{ 4.f };
 	float width{};
 	float height{};
-	float scale{4.0f};
+	float scale{ 4.0f };
+private:
+	
 };
+
+
+#endif
