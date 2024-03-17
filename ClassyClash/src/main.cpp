@@ -1,7 +1,7 @@
 #include "raylib.h"
 #include "raymath.h"
-#include "Character.h"
-#include "Prop.h"
+#include "Props/Prop.h"
+#include "Character/Character.h"
 
 
 int main()
