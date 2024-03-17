@@ -1,6 +1,26 @@
 #include "raylib.h"
 #include "raymath.h"
 
+class Character
+{
+public:
+	Vector2 getWorldPos() { return worldPos; }
+
+private:
+	Texture2D texture;
+	Texture2D idle;
+	Texture2D run;
+	Vector2 screenPos;
+	Vector2 worldPos;
+
+	// Animation variables
+	float rightLeft{ 1.f };
+	float runningTime{};
+	int frame{};
+	const int maxFrames{ 6 };
+	const float updateTime{ 1.f / 12.f };
+};
+
 int main()
 {
 	const int windowWidth{ 960 };
